@@ -1,5 +1,5 @@
 # What is it?
-Lottery 2 v.1
+LotteryO v.1
 
 This application makes small lottery for lists of competitors.
 
@@ -13,6 +13,6 @@ It's possible to add weights in lottery. For that, just add column/field 'weight
 
 ## To run python script:
 Copy project and run:
-```python lottery.py```
+```python lottery_run.py```
 
-Use ```python lottery.py --help``` to check mandatory and optional parameters
+Use ```python lottery_run.py --help``` to check mandatory and optional parameters
