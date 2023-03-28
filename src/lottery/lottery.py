@@ -25,8 +25,9 @@ class Lottery:
         winners = self.run_lottery(number_of_winners)
         winners_list_for_dump = []
 
-        for index, value in enumerate(winners):
-            value.prize = self.prizes_list[index].name
+        for index, winner in enumerate(winners):
+            winner.prize = self.prizes_list[index].name
+            winner.country = 'poland'
 
         if len(winners) <= len(self.prizes_list):
             for winner in winners:

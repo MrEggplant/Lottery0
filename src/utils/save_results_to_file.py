@@ -4,13 +4,17 @@ import os
 import json
 
 
+def make_path_for_results():
+    current_dir = dirname(__file__)
+    data_dir_path = Path(current_dir).parent.joinpath('data/results')
+    return data_dir_path
+
+
 def save_and_show_lottery_results(winners_list_for_dump, name_for_results_file):
     if name_for_results_file is None:
-        pass
+        return None
     else:
-        current_dir = dirname(__file__)
-        data_dir_path = Path(current_dir).parent.joinpath('data/results')
-
+        data_dir_path = make_path_for_results()
         if not data_dir_path.exists():
             data_dir_path.mkdir()
 
