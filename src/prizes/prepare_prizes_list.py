@@ -22,3 +22,6 @@ def prepare_prizes_list(lottery_template):
                 )
                 row['amount'] = row['amount'] - 1
     return prizes
+
+
+prizes = prepare_prizes_list(lottery_template=None)
